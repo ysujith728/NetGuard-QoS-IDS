@@ -6,24 +6,34 @@ UNSW-NB15
 ## Track
 Regression
 
+## File
+`UNSW_NB15_training-set.csv`
+
 ## Purpose
-Predict a continuous network Quality of Service (QoS) and traffic degradation target from flow features.
+Regression analysis for network traffic/QoS-related prediction.
 
 ## Target Variable
 - **Current Planned Target**: `sloss` (Source packet loss)
+
+## Important
+The raw dataset is being included in the repository for this project milestone.
 
 ## Official Source
 - **Provider**: Cyber Range Lab of the Australian Centre for Cyber Security (ACCS) / UNSW Sydney
 - **URL**: [https://research.unsw.edu.au/projects/unsw-nb15-dataset](https://research.unsw.edu.au/projects/unsw-nb15-dataset)
 
-## Expected Local File(s)
-- `UNSW_NB15_training-set.csv`
+## Dataset Details
+- **Filename**: `UNSW_NB15_training-set.csv`
+- **File Size**: ~30.80 MB (32,293,018 bytes)
+- **Rows**: 175,341
+- **Columns**: 45
+- **Regression Target**: `sloss`
 
 ## Usage Instructions
-- Download `UNSW_NB15_training-set.csv` from the official UNSW-NB15 dataset repository.
-- Place `UNSW_NB15_training-set.csv` directly into this directory (`data/regression/`).
-- The experimental design uses the approximately 175,341-row UNSW-NB15 training CSV file to construct an 80:20 train/test split for regression training, validation, and evaluation.
+- The raw dataset `UNSW_NB15_training-set.csv` is located in this directory (`data/regression/`).
+- The experimental design uses the 175,341-row UNSW-NB15 training CSV file to construct train/validation/test splits for regression model training and evaluation.
 
 ## Git Notice
-> [!IMPORTANT]
-> The raw CSV dataset file is intentionally excluded from Git tracking via `.gitignore` due to dataset size and redistribution guidelines. Please ensure `UNSW_NB15_training-set.csv` is present in this directory before executing `notebooks/regression.ipynb`.
+> [!NOTE]
+> The raw dataset (`UNSW_NB15_training-set.csv`) is included in the repository for this project milestone.
+
