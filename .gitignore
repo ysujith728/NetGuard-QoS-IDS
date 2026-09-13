@@ -61,7 +61,6 @@ venv.bak/
 *.swo
 
 # Project Datasets (Prevent committing large non-tracked raw data files)
-data/classification/*.csv
 data/clustering/*.csv
 data/**/*.zip
 data/**/*.pcap

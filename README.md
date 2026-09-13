@@ -31,7 +31,7 @@ Modern network infrastructures require automated, machine-learning-driven monito
 | Classification | CIC-IDS2017 | Network attack classification |
 | Clustering | CTU-13 | Unsupervised network traffic behaviour analysis |
 
-*Note: The raw UNSW-NB15 regression dataset (`UNSW_NB15_training-set.csv`) is included in the repository for this milestone. Instructions for placing other track datasets locally are provided below.*
+*Note: The raw regression dataset (`UNSW_NB15_training-set.csv`) and classification dataset (`network_traffic_classification.csv`, via Git LFS) are tracked in the repository for these project milestones.*
 
 ## Project Structure
 
@@ -41,6 +41,7 @@ NetGuard-QoS-IDS/
 ├── README.md
 ├── requirements.txt
 ├── .gitignore
+├── .gitattributes
 │
 ├── data/
 │   ├── regression/
@@ -48,6 +49,7 @@ NetGuard-QoS-IDS/
 │   │   └── README.md
 │   │
 │   ├── classification/
+│   │   ├── network_traffic_classification.csv (Git LFS)
 │   │   └── README.md
 │   │
 │   └── clustering/
