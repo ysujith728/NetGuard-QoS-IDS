@@ -13,14 +13,20 @@ Network attack and intrusion traffic classification into multi-class threat cate
 - **Provider**: Canadian Institute for Cybersecurity (CIC), University of New Brunswick (UNB)
 - **URL**: [https://www.unb.ca/cic/datasets/ids-2017.html](https://www.unb.ca/cic/datasets/ids-2017.html)
 
-## Expected Local File(s)
-- `GeneratedLabelledFlows.zip` / target CSV files (e.g., `Monday-WorkingHours.pcap_ISCX.csv`, `Wednesday-workingHours.pcap_ISCX.csv`, or combined dataset files).
-- The exact CSV selection and subset file(s) will be finalized after dataset verification.
+## File
+`network_traffic_classification.csv`
+
+## Dataset Details
+- **Filename**: `network_traffic_classification.csv`
+- **File Size**: ~214.74 MB (225,177,324 bytes)
+- **Rows**: 692,703 (610,492 after cleaning duplicates, NaN, and Inf values)
+- **Columns**: 79 (69 after removing zero-variance features)
+- **Target Variable**: `Label` (Multiclass: BENIGN, DoS Hulk, DoS GoldenEye, DoS slowloris, DoS Slowhttptest, Heartbleed)
 
 ## Usage Instructions
-- Download the CIC-IDS2017 dataset from the official UNB website.
-- Extract and place the required dataset CSV file(s) into this directory (`data/classification/`).
+- The raw dataset `network_traffic_classification.csv` is located in this directory (`data/classification/`).
+- The dataset is tracked via **Git LFS** (Large File Storage).
 
 ## Git Notice
-> [!IMPORTANT]
-> Raw dataset files are intentionally excluded from Git tracking via `.gitignore` due to file size considerations and licensing terms. Do not commit `.csv` or `.zip` files to the repository.
+> [!NOTE]
+> The raw classification dataset (`network_traffic_classification.csv`) is tracked in this repository using **Git LFS**. Ensure `git lfs pull` is executed after cloning.
