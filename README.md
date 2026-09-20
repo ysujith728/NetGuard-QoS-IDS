@@ -225,13 +225,13 @@ Evaluation of the 5 baseline multi-class network intrusion classifiers on held-o
 
 | Algorithm | Model Type | Track Lead | Test Accuracy | Weighted $F_1$-Score |
 | :--- | :--- | :--- | :--- | :--- |
-| **Logistic Regression** | Linear (Softmax Log-Odds) | Member 1 | **89.80%** (0.897985) | **0.863729** |
-| **Support Vector Machine (SVC)** | Maximum-Margin Hyperplane (Linear) | Member 3 | **89.80%** (0.897985) | 0.863427 |
-| **Decision Tree Classifier** | Tree-Based (`max_depth=10`) | Member 2 | 89.04% (0.890428) | 0.861311 |
-| **K-Nearest Neighbors (KNN)** | Instance-Based ($k=5$) | Member 1 | 87.22% (0.872166) | 0.848577 |
-| **Gaussian Naive Bayes** | Probabilistic (Gaussian Prior) | Member 2 | 76.20% (0.761965) | 0.769587 |
+| **Logistic Regression** | Linear (Softmax Log-Odds) | Member 1 | **89.69%** (0.896875) | **0.864210** |
+| **Support Vector Machine (SVC)** | Maximum-Margin Hyperplane (Linear) | Member 3 | **89.63%** (0.896250) | 0.863017 |
+| **Decision Tree Classifier** | Tree-Based (`max_depth=10`) | Member 2 | 88.81% (0.888125) | 0.860935 |
+| **K-Nearest Neighbors (KNN)** | Instance-Based ($k=5$) | Member 1 | 87.06% (0.870625) | 0.849195 |
+| **Gaussian Naive Bayes** | Probabilistic (Gaussian Prior) | Member 2 | 79.38% (0.793750) | 0.808519 |
 
-* **Top Performers**: **Logistic Regression** and **Linear SVC** yielded the highest accuracy (~89.80%) and weighted $F_1$ scores (~0.8637), offering strong discriminative capability across benign traffic and multi-class intrusion types.
+* **Top Performers**: **Logistic Regression** and **Linear SVC** yielded the highest accuracy (~89.69%) and weighted $F_1$ scores (~0.8642), offering strong discriminative capability across benign traffic and multi-class intrusion types.
 
 ---
 
