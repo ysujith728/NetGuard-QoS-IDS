@@ -203,8 +203,11 @@ Navigate to `notebooks/` and open `regression.ipynb`, `classification.ipynb`, or
 
 ## 👥 Team
 
-> [!NOTE]
-> Team details placeholder (to be updated).
+| Member | Name | Roll Number |
+| :--- | :--- | :--- |
+| **Member 1** | Sujith | `CB.SC.U4CSE24260` |
+| **Member 2** | Bhavith | `CB.SC.U4CSE2441` |
+| **Member 3** | Vignesh | `CB.SC.U4CSE24265` |
 
 ---
 
