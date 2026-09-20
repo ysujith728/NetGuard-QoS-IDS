@@ -196,8 +196,49 @@ Navigate to `notebooks/` and open `regression.ipynb`, `classification.ipynb`, or
 
 ## 📈 Results
 
-> [!INFO]
-> Results will be added after model training and evaluation.
+### 1. 📉 Regression Performance (UNSW-NB15 — Target: `sloss`)
+
+Comparative performance across all 10 evaluated regression models (including tuned variants and 5-fold cross-validation on top performers):
+
+| Model | $R^2$ Score | 5-Fold CV $R^2$ | RMSE | MAE |
+| :--- | :--- | :--- | :--- | :--- |
+| **Random Forest Regressor** | **0.999669** | 0.999087 | **1.3914** | 0.0683 |
+| **Tuned Random Forest** | 0.999657 | 0.999075 | 1.4158 | **0.0586** |
+| **Gradient Boosting Regressor** | 0.999635 | — | 1.4611 | 0.1696 |
+| **Tuned Gradient Boosting** | 0.999623 | **0.999170** | 1.4850 | 0.1041 |
+| **K-Nearest Neighbors Regressor** | 0.999281 | — | 2.0504 | 0.2836 |
+| **Decision Tree Regressor** | 0.999179 | 0.998162 | 2.1914 | 0.0684 |
+| **Polynomial Regression** | 0.999128 | — | 2.2588 | 0.5975 |
+| **Ridge Regression** | 0.997720 | 0.996843 | 3.6524 | 0.8527 |
+| **Linear Regression** | 0.997717 | 0.996840 | 3.6551 | 0.8528 |
+| **Lasso Regression** | 0.997660 | — | 3.7002 | 0.7364 |
+| **Support Vector Regressor** | 0.997598 | — | 3.7487 | 0.5067 |
+| **ElasticNet** | 0.996296 | — | 4.6553 | 1.1955 |
+
+* **Best Overall Regressor**: **Random Forest** achieved the lowest RMSE (`1.3914`) and highest test $R^2$ (`0.999669`), with **Tuned Gradient Boosting** demonstrating the best cross-validated generalization ($R^2 = 0.999170$).
+
+---
+
+### 2. 🛡️ Classification Performance (CIC-IDS2017 — Review 1 Part-A)
+
+Evaluation of the 5 baseline multi-class network intrusion classifiers on held-out test data:
+
+| Algorithm | Model Type | Track Lead | Test Accuracy | Weighted $F_1$-Score |
+| :--- | :--- | :--- | :--- | :--- |
+| **Logistic Regression** | Linear (Softmax Log-Odds) | Member 1 | **89.80%** (0.897985) | **0.863729** |
+| **Support Vector Machine (SVC)** | Maximum-Margin Hyperplane (Linear) | Member 3 | **89.80%** (0.897985) | 0.863427 |
+| **Decision Tree Classifier** | Tree-Based (`max_depth=10`) | Member 2 | 89.04% (0.890428) | 0.861311 |
+| **K-Nearest Neighbors (KNN)** | Instance-Based ($k=5$) | Member 1 | 87.22% (0.872166) | 0.848577 |
+| **Gaussian Naive Bayes** | Probabilistic (Gaussian Prior) | Member 2 | 76.20% (0.761965) | 0.769587 |
+
+* **Top Performers**: **Logistic Regression** and **Linear SVC** yielded the highest accuracy (~89.80%) and weighted $F_1$ scores (~0.8637), offering strong discriminative capability across benign traffic and multi-class intrusion types.
+
+---
+
+### 3. 🔍 Clustering Performance (CTU-13 — Review 2)
+
+> [!NOTE]
+> Clustering experiments (K-Means, Agglomerative Hierarchical, PCA/t-SNE visualization) are scheduled for the next review milestone.
 
 ---
 
