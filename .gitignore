@@ -71,4 +71,5 @@ data/**/*.pcapng
 *.pkl
 *.joblib
 !models/.gitkeep
+!models/*.joblib
 !app/.gitkeep

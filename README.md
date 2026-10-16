@@ -255,6 +255,40 @@ Evaluation of unsupervised traffic profiling across the evaluated clustering alg
 
 ---
 
+## 🖥️ Interactive SOC Intelligence GUI (Review 2 Bonus Deliverable)
+
+NetGuard includes a full-featured, Security Operations Center (SOC)-inspired web application built with **Streamlit** and **Plotly**, styled with a dark cybersecurity intelligence design system.
+
+### Key Capabilities
+* 🛡️ **Security Overview**: Executive SOC telemetry with audited dataset volume counters, threat class distributions, and top model performance indicators.
+* ⚡ **Traffic Analysis & Inference Engine**: Drag-and-drop CSV upload and pre-packaged sample batch loaders with automatic schema validation, zero-leakage target quarantine, real-time threat categorization, prediction confidence scores, and exportable CSV telemetry reports.
+* 🎯 **Threat Intelligence**: Interactive multi-class confusion matrices (raw and normalized), One-vs-Rest ROC-AUC curves, per-class precision/recall metrics, and tactical SOC mitigation playbooks.
+* 📉 **Regression Analytics**: Full 10-algorithm comparison table ranked by $R^2$, 5-fold CV $R^2$, RMSE, MAE, actual vs. predicted scatter plots, residual diagnostics, feature importance, and an interactive single-flow QoS packet loss calculator.
+* 🔬 **Classification Model Lab**: Consolidated 10-algorithm benchmark (Part A baseline models vs. Part B ensembles/MLP), architecture comparisons, single-model inspection, and hyperparameter tuning reports.
+* 🧩 **Clustering Studio**: Unsupervised behavioral profiling on NSL-KDD, K-Means ($K=5$) vs. Agglomerative Hierarchical ($K=5$), interactive 2D PCA subspace projections with ground-truth validation toggles, inertia elbow curve, dendrogram analysis, and cluster purity metrics.
+* 📊 **Dataset & Artifact Explorer**: Schema inspection, zero-variance feature pruning audit, feature engineering breakdown, and physical `.joblib` model artifact inspector.
+* 📖 **Documentation & Rubrics**: Comprehensive course deliverables checklist mapping directly to the 23CSE301 Capstone guidelines and architecture diagrams.
+
+### 🚀 Running the GUI Locally
+
+```bash
+# 1. Activate virtual environment
+venv\Scripts\activate      # Windows
+# source venv/bin/activate  # Linux/macOS
+
+# 2. Install dependencies
+pip install -r requirements.txt
+
+# 3. Generate model bundles (if not already present in models/)
+python train_and_export_artifacts.py
+
+# 4. Launch the application
+streamlit run app/main.py
+```
+The application will launch at `http://localhost:8501`.
+
+---
+
 ## 👥 Team
 
 | Member | Name | Roll Number |
